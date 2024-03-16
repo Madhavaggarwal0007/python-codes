@@ -13,17 +13,21 @@ def multiply(n1, n2):
 def divide(n1, n2):
     if n2 != 0:
         return n1 / n2
+    
+def modulos(n1,n2):
+    return n1%n2
 #this function calculate the product 
 def calculator():
     operations = {
         '+': add,
         '-': subtract,
         '*': multiply,
-        '/': divide
+        '/': divide,
+        '%':modulos
     }
 #for taking input from the user 
     num1 = float(input("Enter first number: "))
-    op = input("Enter operator (+,-,*,/): ")
+    op = input("Enter operator (+,-,*,/,%): ")
     num2 = float(input("Enter second number: "))
 
     if op in operations:
@@ -33,3 +37,4 @@ def calculator():
         print("Invalid operator")
 
 calculator()
+# made by Madhav Aggarwal 500123223 
